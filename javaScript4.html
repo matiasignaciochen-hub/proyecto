@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Estructura secuencial</h1>
+        <p id="resultado1"></p>
+        <p id="resultado2"></p>
+        <script>
+        // 1. Entrada de datos
+        let valor1 = prompt('Ingrese el primer número:');
+        let valor2 = prompt('Ingrese el segundo número:');
+        // 2. Selección de los elementos HTML
+        let res1 = document.getElementById("resultado1");
+        let res2 = document.getElementById("resultado2");
+        // 3. Proceso (operaciones matemáticas)
+        let suma = parseInt(valor1) + parseInt(valor2);
+        let producto = parseInt(valor1) * parseInt(valor2);
+        // 4. Salida
+        res1.innerHTML = 'La suma es: ' + suma;
+        res2.innerHTML = 'El producto es: ' + producto;
+        </script>
+        if (condición) {
+            // Instrucciones que se ejecutan cuando la condición es verdadera.
+            }
+            <h2>Estructura if:</h2>
+            <button id="demo1">Ver ejemplo</button>
+            <script>
+            let boton1 = document.getElementById("demo1");
+            boton1.addEventListener("click", function() {
+            let edad = Number(prompt('Ingrese la edad:'));
+            if (edad >= 18) {
+            alert("Puedes ingresar a esta sección");
+            }
+        });
+</script>
+if (condición) {
+// Instrucciones si la condición es verdadera.
+} else {
+// Instrucciones si la condición es falsa.
+}
+Ejemplo: mostrar un mensaje diferente según la edad.
+<h2>Estructura if...else:</h2>
+<button id="demo2">Ver ejemplo</button>
+<script>
+let boton2 = document.getElementById("demo2");
+boton2.addEventListener("click", function() {
+let edad = Number(prompt('Ingrese la edad:'));
+if (edad >= 18) {
+alert("Puedes ingresar a esta sección");
+} else {
+alert("No puedes ingresar a esta sección");
+}
+});
+</script>
+</body>
+for (inicialización; condición; incremento) {
+    // Instrucciones que se repiten.
+    }
+    Ejemplo: imprimir los números del 1 al 5.
+    <h3>El ciclo for:</h3>
+    <p>Ejemplo: imprimir los números del 1 al 5.</p>
+    <button id="ejemplo1" type="button">Ver</button>
+    <script>
+    const btn1 = document.querySelector("#ejemplo1");
+    btn1.addEventListener("click", function() {
+    let mensaje = "Imprimiendo números del 1 al 5:\n";
+    for (let i = 1; i <= 5; i++) {
+    mensaje += "Número " + i + "\n";
+    }
+    alert(mensaje);
+    });
+    </script>
+for (inicialización; condición; incremento) {
+    // Instrucciones que se repiten.
+    }
+    <h3>El ciclo for:</h3>
+    <p>Ejemplo: imprimir los números del 1 al 5.</p>
+    <button id="ejemplo1" type="button">Ver</button>
+    <script>
+    const btn1 = document.querySelector("#ejemplo1");
+    btn1.addEventListener("click", function() {
+    let mensaje = "Imprimiendo números del 1 al 5:\n";
+    for (let i = 1; i <= 5; i++) {
+    mensaje += "Número " + i + "\n";
+    do {
+// Instrucciones que se ejecutan.
+} while (condición);
+
+</html>

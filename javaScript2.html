@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1: Contador Regresivo</title>
+</head>
+<body>
+    <h1>Ejercicio: Contador descendente</h1>
+    <p>Contador = <span id="conteo">10</span></p>
+    <button id="btnBajar">Bajar</button>
+
+    <script>
+        let contador = 10;
+        let boton = document.getElementById("btnBajar");
+        let numero = document.getElementById("conteo");
+
+        boton.addEventListener("click", function(){
+            if (contador > 0) {
+                contador--;
+                numero.textContent = contador;
+            }
+    </script>
+
+<h1>Ejercicio: Modificar texto al presionar un botón</h1>
+<p id="texto">Texto original</p>
+<button id="btntexto">Haz clic</button>
+
+<script>
+  let botonTexto = document.getElementById("btntexto");
+  let parrafoTexto = document.getElementById("texto");
+
+  botonTexto.addEventListener("click", function() {
+      parrafoTexto.innerHTML = "Texto modificado";
+  });
+</script>
+
+<h1>Ejercicio: Contador ascendente</h1>
+<p>Contador = <span id="conteo">0</span></p>
+<button id="btnsubir">Subir</button>
+
+<script>
+  let contador = 0;
+  let botonSubir = document.getElementById("btnsubir");
+  let numeroConteo = document.getElementById("conteo");
+
+  botonSubir.addEventListener("click", function(){
+      contador++;
+      numeroConteo.textContent = contador;
+  });
+</script>
+
+<h1>Ejercicio: Modificar fondo al presionar un botón</h1>
+<button id="btnCambiarFondo">Cambiar Fondo</button>
+
+<script>
+  const botonFondo = document.getElementById('btnCambiarFondo');
+
+  botonFondo.addEventListener('click', function() {
+      document.body.style.backgroundColor = 'lightblue';
+  });
+</script>
+
+        });
+    </script>
+</body>
+</html>

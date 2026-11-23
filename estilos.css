@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f1ea;
+  color: #222222;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Encabezado y navegacion */
+.encabezado {
+  background-color: #1b365d;
+  color: #ffffff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.escudo {
+  height: 45px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f0b429;
+}
+
+/* Contenido principal */
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #1b365d;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: #1b365d;
+  border-bottom: 2px solid #f0b429;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+h3 {
+  color: #2b4c7e;
+  margin-top: 0;
+}
+
+/* Dos columnas simples */
+#inicio,
+#perfil > div,
+#biografia > div,
+#legado > div,
+#oracion > div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#inicio > div,
+#perfil article,
+#biografia > div > div,
+#legado article,
+#oracion article {
+  flex: 1 1 300px;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 8px;
+}
+
+blockquote {
+  background-color: #f9f7f2;
+  border-left: 4px solid #1b365d;
+  margin: 15px 0;
+  padding: 10px 15px;
+  font-style: italic;
+}
+
+/* Pie de pagina */
+footer {
+  background-color: #1b365d;
+  color: #ffffff;
+  padding: 25px 20px;
+  margin-top: 30px;
+}
+
+footer h2 {
+  color: #ffffff;
+  border-bottom-color: #f0b429;
+}
+
+footer a {
+  color: #f0b429;
+}
+
+footer a:hover {
+  color: #ffffff;
+}

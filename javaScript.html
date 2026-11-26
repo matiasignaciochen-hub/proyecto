@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Estructuras de control en JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beato Pedro Casani</title>
 </head>
+
 <body>
 
-    <h1>Estructura de Control en Js</h1>
-    
-    <p id="resultado1"></p>
-    <p id="resultado2"></p>
+    <h1 id="titulo">Beato Pedro Casani de la Natividad</h1>
 
-    <hr>
+    <p>
+        Sacerdote escolapio y colaborador de San José de Calasanz.
+    </p>
 
-    <h2>Estructuras Condicionales</h2>
-    <button id="demo1">1. Probar if (Edad)</button>
-    <button id="demo2">2. Probar if...else (Acceso)</button>
-    <button id="demo3">3. Probar if...else if...else (Calificación)</button>
+    <img src="img/beato-Pedro-Casan.jpg"
+         alt="Retrato del Beato Pedro Casani"
+         width="300">
+
+    <h2>Datos importantes</h2>
+
+    <ul>
+        <li>Nacimiento: 8 de septiembre de 1572.</li>
+        <li>Fallecimiento: 17 de octubre de 1647.</li>
+        <li>Beatificación: 1 de octubre de 1995.</li>
+    </ul>
+
+    <h2>Biografía</h2>
+
+    <p>
+        Pedro Casani fue un religioso escolapio que colaboró
+        con San José de Calasanz en la educación de los niños.
+    </p>
+
+    <h2>JavaScript</h2>
+
+    <button onclick="mostrarMensaje()">Conocer más</button>
+
+    <button onclick="cambiarColor()">Cambiar color</button>
+
+    <button onclick="mostrarFecha()">Mostrar fecha</button>
+
+    <button onclick="volverArriba()">Volver arriba</button>
+
+    <p id="mensaje"></p>
 
     <script>
-        let valor1 = prompt('Ingrese el primer número:');
-        let valor2 = prompt('Ingrese el segundo número:');
 
-        let res1 = document.getElementById("resultado1");
-        let res2 = document.getElementById("resultado2");
+        // Mostrar información
+        function mostrarMensaje() {
+            alert("Pedro Casani fue un importante religioso escolapio.");
+        }
 
-        let suma = parseInt(valor1) + parseInt(valor2);
-        let producto = parseInt(valor1) * parseInt(valor2);
+        // Cambiar el color del título
+        function cambiarColor() {
+            document.getElementById("titulo").style.color = "brown";
+        }
 
-        res1.innerHTML = 'La suma es: ' + suma;
-        res2.innerHTML = 'El producto es: ' + producto;
+        // Mostrar la fecha
+        function mostrarFecha() {
+            document.getElementById("mensaje").innerHTML =
+            "Memoria litúrgica: 17 de octubre.";
+        }
 
+        // Volver al inicio
+        function volverArriba() {
+            window.scrollTo(0, 0);
+        }
 
-        let boton1 = document.getElementById("demo1");
-        boton1.addEventListener("click", function() {
-            let edad = prompt('Ingrese la edad:');
-            if (edad >= 18) {
-                alert("Puedes ingresar a esta sección");
-            }
-        });
+        // Mensaje en la consola
+        console.log("Página cargada correctamente");
+        
+// Funcion para corregir las respuestas
+function corregirRespuestas() {
 
+    var respuesta1 = document.getElementById("pregunta1").value;
+    var respuesta2 = document.getElementById("pregunta2").value;
+    var respuesta3 = document.getElementById("pregunta3").value;
 
-        let boton2 = document.getElementById("demo2");
-        boton2.addEventListener("click", function() {
-            let edad = prompt('Ingrese la edad:');
-            if (edad >= 18) {
-                alert("Puedes ingresar a esta sección");
-            } else {
-                alert("NO Puedes ingresar a esta sección");
-            }
-        });
+    var puntos = 0;
 
+    // Primera pregunta
+    if (respuesta1 == "b") {
+        puntos = puntos + 1;
+    }
 
-       
-    let boton3 = document.getElementById("demo3");
-        boton3.addEventListener("click", function() {
-            let nota = prompt('Ingrese la calificación:');
-            if (nota >= 9) {
-                alert("Excelente");
-            } else if (nota >= 6) {
-                alert("Aprobado");
-            } else {
-                alert("Debes recuperar");
-            }
-        });
+    // Segunda pregunta
+    if (respuesta2 == "c") {
+        puntos = puntos + 1;
+    }
+
+    // Tercera pregunta
+    if (respuesta3 == "b") {
+        puntos = puntos + 1;
+    }
+
+    // Mostrar el resultado
+    document.getElementById("resultado").innerHTML =
+    "Tu resultado es: " + puntos + " de 3 puntos.";
+
+    if (puntos == 3) {
+        alert("¡Excelente! Todas las respuestas son correctas.");
+    }
+    else {
+        alert("¡Buen intento! Sigue estudiando.");
+    }
+
+}
     </script>
 
 </body>
